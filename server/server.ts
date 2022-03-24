@@ -35,7 +35,7 @@ import { loggerMiddleware } from './middleware/loggerMiddleware';
   app.use(loggerMiddleware);
 
   //Public endpoints
-  app.get('/healthz', (req, res) => res.send({ status: 'Ok' }));
+  app.get('/healthz', (req, res) => res.send({ status: 'still breathing !!' }));
   app.post('/v1/signup', asyncHandler(signUpHandler));
   app.post('/v1/signin', asyncHandler(signInHandler));
 
